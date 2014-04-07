@@ -6,10 +6,6 @@ body {
   position: relative;
 }
 
-div * {
-  font-family: 'Press Start 2P', cursive;
-}
-
 section {
   min-height: 90%;
 
@@ -22,7 +18,7 @@ section {
   min-height: 80%;
 
   h1 {
-    margin-left: 1em;
+    margin-top: 3em;
   }
 }
 
@@ -46,3 +42,13 @@ section {
   color: @white;
 }
 
+a {
+  color: @white;
+  .transition(color 0.3s ease-in);
+
+  &:hover,
+  &:focus {
+    text-decoration: none;
+    color: @blue;
+  }
+}

@@ -1,9 +1,21 @@
 footer {
   background-color: @black;
   padding-top: 1.5em;
+  position: absolute;
+  width: 100%;
+  bottom: 0;
 
   p {
     color: @white;
     font-size: 10px;
+  }
+
+  a {
+    color: @blue;
+
+    &:hover,
+    &:focus {
+      color: @white;
+    }
   }
 }
