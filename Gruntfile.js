@@ -64,6 +64,27 @@ module.exports = function(grunt) {
       }
     },
 
+    // compile LESS to CSS
+    less: {
+      dev: {
+        options: {
+          paths: ['<%= globalConfig.src %>/less']
+        },
+        files: {
+          '<%= globalConfig.dest %>/css/main.css': '<%= globalConfig.src %>/less/main.less'
+        }
+      },
+      prod: {
+        options: {
+          paths: ['<%= globalConfig.src %>/less'],
+          cleancss: true //minifies CSS output
+        },
+        files: {
+          '<%= globalConfig.dest %>/css/main.css': '<%= globalConfig.src %>/less/main.less'
+        }
+      }
+    },
+
     // concatenate JavaScript files; done just for development
     concat: {
       options: {
@@ -179,6 +200,13 @@ module.exports = function(grunt) {
           }
         }
       }
+    },
+
+    // open the local server; done just for development
+    open: {
+      dev: {
+        path: 'http://<%= connect.options.hostname %>:<%= connect.options.port %>/'
+      }
     }
 
   });
@@ -187,4 +215,5 @@ module.exports = function(grunt) {
   grunt.registerTask('default', ['clean', 'jade', 'jshint', 'copy']);
   grunt.registerTask('dev', ['default', 'concat', 'less:dev', 'connect', 'open', 'watch']);
   grunt.registerTask('prod', ['default', 'validation','less:prod', 'uglify', 'imagemin']);
+
 };
