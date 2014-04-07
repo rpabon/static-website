@@ -1,0 +1,44 @@
+{
+  "name": "static-website",
+  "version": "0.0.0",
+  "description": "static website",
+  "main": "index.html",
+  "scripts": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/rpabon/static-website"
+  },
+  "keywords": [
+    "static",
+    "website"
+  ],
+  "author": "Ricardo Pabón <rpabon257@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/rpabon/static-website/issues"
+  },
+  "devDependencies": {
+    "grunt": "~0.4.2",
+    "load-grunt-tasks": "~0.2.1",
+    "grunt-contrib-clean": "~0.5.0",
+    "grunt-contrib-jshint": "~0.7.2",
+    "grunt-contrib-watch": "~0.5.3",
+    "grunt-contrib-concat": "~0.3.0",
+    "grunt-contrib-uglify": "~0.2.7",
+    "grunt-contrib-jade": "~0.9.0",
+    "grunt-contrib-imagemin": "~0.4.0",
+    "grunt-contrib-less": "~0.8.3",
+    "grunt-contrib-copy": "~0.5.0",
+    "grunt-contrib-connect": "~0.5.0",
+    "connect-livereload": "~0.3.1",
+    "grunt-open": "~0.2.2",
+    "grunt-contrib-cssmin": "~0.7.0",
+    "grunt-uncss": "~0.1.6",
+    "uncss": "~0.7.0"
+  },
+  "engines": {
+    "node": ">= 0.10.0"
+  }
+}

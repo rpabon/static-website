@@ -1,0 +1,26 @@
+{
+  "name": "static-website",
+  "version": "0.0.0",
+  "authors": [
+    "rpabon <rpabon257@gmail.com>"
+  ],
+  "description": "static website",
+  "main": "index.html",
+  "keywords": [
+    "static",
+    "website"
+  ],
+  "license": "MIT",
+  "homepage": "http://pabon.16mb.com",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "devDependencies": {
+    "bootstrap": "~3.0.3",
+    "jquery": "~2.0.3"
+  }
+}
