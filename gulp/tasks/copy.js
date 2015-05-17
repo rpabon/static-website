@@ -1,11 +1,9 @@
-var gulp, imagemin, imgCompressOptions, paths, pngquant;
+var gulp = require('gulp'),
+    paths = require('../config').paths,
+    imagemin = require('gulp-imagemin'),
+    pngquant = require('imagemin-pngquant');
 
-gulp = require('gulp');
-paths = require('../config').paths;
-imagemin = require('gulp-imagemin');
-pngquant = require('imagemin-pngquant');
-
-imgCompressOptions = {
+var imgCompressOptions = {
   progressive: true,
   svgoPlugins: [{removeViewBox: false}], use: [pngquant()]
 };

@@ -1,11 +1,12 @@
-var gulp, jade, paths;
-
-gulp = require('gulp');
-paths = require('../config').paths;
-jade = require('gulp-jade');
+var gulp = require('gulp'),
+    paths = require('../config').paths,
+    flag = require('yargs').argv,
+    jade = require('gulp-jade'),
+    connect = require('gulp-connect');
 
 gulp.task('jade', function() {
   return gulp.src( paths.html.src )
-          .pipe( jade({pretty: true}) )
-          .pipe( gulp.dest(paths.html.dest) );
+    .pipe( jade({pretty: !flag.production}) )
+    .pipe( gulp.dest(paths.html.dest) )
+    .pipe( connect.reload() );
 });

@@ -5,5 +5,5 @@ tasks = require('require-dir')('./gulp/tasks');
 runSequence = require('run-sequence');
 
 gulp.task('default', function(done) {
-  return runSequence('clean', 'copy', 'jade', 'less', 'scripts', 'watch', 'notify', done);
+  return runSequence('clean', 'copy', ['jade', 'scss', 'scripts'], 'watch', 'notify', 'connect', done);
 });

@@ -1,5 +1,5 @@
 .navbar.navbar-static-top {
-  background-color: @darkblue;
+  background-color: $darkblue;
   margin: 0;
   padding: 0;
   width: 100%;
@@ -11,7 +11,7 @@
 }
 
 .logo {
-  color: @white;
+  color: $white;
 
   & > * {
     display: inline-block;
@@ -23,8 +23,8 @@
   }
 
   img {
-    .border-radius(16px);
-    background-color: @white;
+    border-radius: 16px;
+    background-color: $white;
     padding: 2px;
   }
 }
@@ -33,6 +33,6 @@ ul.nav.navbar-nav {
 
   a {
     font-size: 12px;
-    color: @white;
+    color: $white;
   }
 }

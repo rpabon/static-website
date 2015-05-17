@@ -4,6 +4,7 @@ html, body {
 
 body {
   position: relative;
+  font-family: $font-family-base;
 }
 
 section {
@@ -34,20 +35,20 @@ section {
 
 .box-title {
   font-size: 12px;
-  .text-center;
+  text-align: center;
 }
 
 .white-text {
-  color: @white;
+  color: $white;
 }
 
 a {
-  color: @white;
-  .transition(color 0.3s ease-in);
+  color: $white;
+  transition: color 0.3s ease-in;
 
   &:hover,
   &:focus {
     text-decoration: none;
-    color: @blue;
+    color: $blue;
   }
 }

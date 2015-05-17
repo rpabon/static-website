@@ -1,21 +1,21 @@
 footer {
-  background-color: @black;
+  background-color: $green;
   padding-top: 1.5em;
   position: absolute;
   width: 100%;
   bottom: 0;
 
   p {
-    color: @white;
+    color: $white;
     font-size: 10px;
   }
 
   a {
-    color: @blue;
+    color: $blue;
 
     &:hover,
     &:focus {
-      color: @white;
+      color: $white;
     }
   }
 }
