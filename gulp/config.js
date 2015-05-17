@@ -17,7 +17,8 @@ var config = {
       dest: basePaths.dest + "/css"
     },
     js: {
-      src: basePaths.src + "/js/**/*.js",
+      src: basePaths.src + "/js/*.js",
+      srcAll: basePaths.src + "/js/**/*.js",
       dest: basePaths.dest + "/js"
     },
     img: {
