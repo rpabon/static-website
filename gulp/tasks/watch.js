@@ -9,5 +9,6 @@ gulp.task('watch', function() {
     gulp.watch( paths.scss.src, ['scss']);
     gulp.watch( paths.js.srcAll, ['scripts']);
     gulp.watch( paths.img.src, ['copy:images']);
+    gulp.watch( paths.tasks, ['base']);
   }
 });

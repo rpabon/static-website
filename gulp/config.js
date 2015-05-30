@@ -7,6 +7,7 @@ var config = {
   paths: {
     src: basePaths.src,
     dest: basePaths.dest,
+    tasks: ['./gulp/**/*.js', './Gulpfile.js'],
     html: {
       src: basePaths.src + "/jade/*.jade",
       srcAll: basePaths.src + "/jade/**/*.jade",
