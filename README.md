@@ -14,12 +14,19 @@ bower install
 
 with this, all packages and dependencies contained in bower.json.
 
-Now that the project is set in the local file system, it is time to see it in action. The grunt tasks are used for this purpose. In the CLI, type
+Now that the project is set in the local file system, it is time to see it in action. The gulp tasks are used for this
+purpose. In the CLI, type
 
 ```javascript
- grunt dev
+ gulp
 ```
 
-this will trigger the dev task, which contains the watch task, responsible for looking out for changes in the code; and the connect and open task, which make it possible to see our changes in the browser with a live reload.
+this will trigger the dev task, which contains the watch task, responsible for looking out for changes in the code; and
+the connect task, which make it possible to see our changes in the browser with a live reload.
 
-A production task, prod, is also specified. This task does not do live reload, but optimizes the files, so they do not take much space and, therefore, it will make the page load faster.
+A production build is also included. This task optimizes the files, so they do not take much space and, therefore, it
+will make the page load faster. To start the production task, type:
+
+```javascript
+ gulp --production
+```
