@@ -1,6 +1,6 @@
-var gulp = require('gulp'),
-    tasks = require('require-dir')('./gulp/tasks'),
-    runSequence = require('run-sequence');
+var gulp = require('gulp');
+var tasks = require('require-dir')('./gulp/tasks');
+var runSequence = require('run-sequence');
 
 gulp.task('base', function(done) {
   return runSequence('clean', 'copy', ['jade', 'scss', 'scripts'], done);

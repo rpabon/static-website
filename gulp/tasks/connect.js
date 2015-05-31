@@ -1,7 +1,7 @@
-var gulp = require('gulp'),
-    paths = require('../config').paths,
-    flag = require('yargs').argv,
-    connect = require('gulp-connect');
+var gulp = require('gulp');
+var paths = require('../config').paths;
+var flag = require('yargs').argv;
+var connect = require('gulp-connect');
 
 gulp.task('connect', function() {
   if (!flag.production) {

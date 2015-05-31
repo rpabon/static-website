@@ -1,7 +1,7 @@
-var gulp = require('gulp'),
-    paths = require('../config').paths,
-    imagemin = require('gulp-imagemin'),
-    pngquant = require('imagemin-pngquant');
+var gulp = require('gulp');
+var paths = require('../config').paths;
+var imagemin = require('gulp-imagemin');
+var pngquant = require('imagemin-pngquant');
 
 var imgCompressOptions = {
   progressive: true,
@@ -10,8 +10,8 @@ var imgCompressOptions = {
 
 gulp.task('copy:images', function() {
   return gulp.src(paths.img.src)
-          .pipe(imagemin(imgCompressOptions))
-          .pipe(gulp.dest(paths.img.dest));
+    .pipe(imagemin(imgCompressOptions))
+    .pipe(gulp.dest(paths.img.dest));
 });
 
 gulp.task('copy', ['copy:images']);
